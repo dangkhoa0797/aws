@@ -482,3 +482,795 @@ Sample Exam Questions
 © 2018, Amazon Web Services, Inc. or its affiliates. All rights reserved | aws.amazon.com 5
 NAT Gateway is required to give the database cluster the ability to download patches from the Internet.
 NAT Gateways must be deployed in public subnets.
+
+
+
+Domain: Cloud Concepts
+Q 1: According to AWS, what is the benefit of Elasticity?
+
+A. Minimize storage requirements by reducing logging and auditing activities
+B. Create systems that scale to the required capacity based on changes in demand
+C. Enable AWS to automatically select the most cost-effective services.
+D. Accelerate the design process because recovery from failure is automated, reducing the need for testing
+
+Answer – B
+
+Explanation : 
+
+The concept of Elasticity is the means of an application having the ability to scale up and scale down based on demand. An example of such a service is the Autoscaling service
+
+For more information on AWS Autoscaling service, please refer to the below URL: https://aws.amazon.com/autoscaling/
+
+A, C and D are incorrect. Elasticity will not have positive effects on storage, cost or design agility.
+
+ 
+
+Domain : Billing and Pricing
+Q2: Which tool can you use to forecast your AWS spending?
+
+A. AWS Organizations
+B. Amazon Dev Pay
+C. AWS Trusted Advisor
+D. AWS Cost Explorer
+
+Answer – D
+
+Explanation : 
+
+The AWS Documentation mentions the following.
+
+Cost Explorer is a free tool that you can use to view your costs. You can view data up to the last 12 months. You can forecast how much you are likely to spend for the next 12 months and get recommendations for what Reserved Instances to purchase. You can use Cost Explorer to see patterns in how much you spend on AWS resources over time, identify areas that need further inquiry, and see trends that you can use to understand your costs. You also can specify time ranges for the data and view time data by day or by month.
+
+AWS cost explorer tool
+For more information on the AWS Cost Explorer, please refer to the below URL: http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer-what-is.html
+
+A, B and C are incorrect. These services do not relate to billing and cost.
+
+ 
+
+Domain : Technology
+Q3: A business analyst would like to move away from creating complex database queries and static spreadsheets when generating regular reports for high-level management. They would like to publish insightful, graphically appealing reports with interactive dashboards. Which service can they use to accomplish this?
+
+A. Amazon QuickSight
+B. Business intelligence on Amazon Redshift
+C. Amazon CloudWatch dashboards
+D. Amazon Athena integrated with Amazon Glue
+
+Correct Answer – A
+
+Explanation : 
+
+Amazon QuickSight is the most appropriate service in the scenario. It is a fully-managed service that allows for insightful business intelligence reporting with creative data delivery methods, including graphical and interactive dashboards. QuickSight includes machine learning that allows users to discover inconspicuous trends and patterns on their datasets.
+
+AWS Quick Sight
+AWS Quick Sight tool | Source: aws.amazon.com/quicksight
+Option B is INCORRECT. Amazon Redshift service is a data warehouse and will not meet the requirements of interactive dashboards and dynamic means of delivering reports.
+Option C is INCORRECT. Amazon CloudWatch dashboards will not accomplish the requirements of the scenario. They are used to monitor AWS system resources and infrastructure services, though they are customizable and present information graphically.
+Option D is INCORRECT. Amazon Athena is a query service that allows for easy data analysis in Amazon S3 by using standard SQL. The service does not meet the requirements of the scenario. 
+ 
+
+Domain : Technology
+Q4. What is the AWS feature that enables fast, easy and secure transfers of files over long distances between your client and your Amazon S3 bucket?
+
+A. File Transfer
+B. HTTP Transfer
+C. Amazon S3 Transfer Acceleration
+D. S3 Acceleration
+
+Answer – C
+
+Explanation : 
+
+The AWS Documentation mentions the following.
+
+Amazon S3 Transfer Acceleration enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path.
+
+For more information on S3 transfer acceleration, please visit the Link: http://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html
+
+Options A, B and D are incorrect. These features deal with transferring data but not between clients and an S3 bucket.
+
+ 
+
+Domain : Security
+Q5: What best describes the “Principle of Least Privilege”? Choose the correct answer from the options given below.
+
+A. All users should have the same baseline permissions granted to them to use basic AWS services.
+B. Users should be granted permission to access only resources they need to do their assigned job.
+C. Users should submit all access requests in written form so that there is a paper trail of who needs access to different AWS resources.
+D. Users should always have a little more permission than they need.
+
+Answer – B
+
+Explanation : 
+
+The principle means giving a user account only those privileges which are essential to perform its intended function. For example, a user account for the sole purpose of creating backups does not need to install the software. Hence, it has rights only to run backup and backup-related applications. 
+
+For more information on the principle of least privilege, please refer to the following link: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+
+Options A, C, and D are incorrect. These actions would not adhere to the Principle of Least Privilege.
+
+ 
+
+Domain : Security
+Q6: A web administrator maintains several public and private web-based resources for an organisation. Which service can they use to keep track of the expiry dates of SSL/TLS certificates as well as updating and renewal?
+
+A. AWS Data Lifecycle Manager
+B. AWS License Manager
+C. AWS Firewall Manager
+D. AWS Certificate Manager
+
+Correct Answer – D
+
+Explanation : 
+
+The AWS Certificate Manager allows the web administrator to maintain one or several SSL/TLS certificates, both private and public certificates including their update and renewal so that the administrator does not worry about the imminent expiry of certificates. https://aws.amazon.com/certificate-manager/
+
+Option A is INCORRECT. The AWS Lifecycle Manager creates life cycle policies for specified resources to automate operations. https://docs.aws.amazon.com/dlm/?id=docs_gateway
+Option B is INCORRECT. AWS License Manager serves the purpose of differentiating, maintaining third-party software provisioning vendor licenses. It also decreases the risk of license expirations and the penalties. https://docs.aws.amazon.com/license-manager/?id=docs_gateway
+Option C is INCORRECT. AWS Firewall Manager aids in the administration of Web Application Firewall (WAF), by presenting a centralised point of setting firewall rules across different web resources. https://docs.aws.amazon.com/firewall-manager/?id=docs_gateway
+ 
+
+Domain : Security
+Q7: Which of the following is the responsibility of the customer to ensure the availability and backup of the EBS volumes?
+
+A. Delete the data and create a new EBS volume.
+B. Create EBS snapshots.
+C. Attach new volumes to EC2 Instances.
+D. Create copies of EBS Volumes.
+
+Answer – B
+
+Explanation : 
+
+Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved. 
+
+When you create an EBS volume based on a snapshot, the new volume begins as an exact replica of the original volume that was used to create the snapshot. The replicated volume loads data in the background so that you can begin using it immediately.
+
+Amazon EBS snapshots
+Amazon EBS snapshots | Source: aws.amazon.com
+Option A is incorrect because there is no need for backup of the volumes if data is already deleted.
+
+Option C is incorrect because attaching more EBS volumes doesn’t ensure availability, if there is no snapshot then the volume cannot be available to a different availability zone.
+
+Option D is incorrect EBS volumes cannot be copied, they can only be replicated using snapshots.
+
+For more information on EBS Snapshots, please refer to the below URL:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html
+
+ 
+
+Domain : Security
+Q8: Which of the following services can be used as an application firewall in AWS?
+
+A. AWS Snowball
+B. AWS WAF
+C. AWS Firewall
+D. AWS Protection
+
+Answer – B
+
+Explanation : 
+
+The AWS Documentation mentions the following:
+
+AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to Amazon CloudFront or an Application Load Balancer. AWS WAF also lets you control access to your content.
+
+AWS Snowball, a part of the AWS Snow Family, is an edge computing, data migration, and edge storage device that comes in two options. Snowball Edge Storage Optimized devices provide both block storage and Amazon S3-compatible object storage, and 40 vCPUs.
+
+For more information on AWS WAF, please refer to the below URL:https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html
+https://aws.amazon.com/snowball/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
+
+ 
+
+Domain : Cloud Concepts
+Q9: Your design team is planning to design an application that will be hosted on the AWS Cloud. One of their main non-functional requirements is given below:
+Reduce inter-dependencies so failures do not impact other components.
+Which of the following concepts does this requirement relate to?
+
+A. Integration
+B. Decoupling
+C. Aggregation
+D. Segregation
+
+Answer – B
+
+Explanation : 
+
+The entire concept of decoupling components ensures that the different components of applications can be managed and maintained separately. If all components are tightly coupled, the entire application would go down when one component goes down. Hence it is always a better practice to decouple application components.
+
+For more information on a decoupled architecture, please refer to the below URL: http://whatis.techtarget.com/definition/decoupled-architecture
+
+ 
+
+Domain : Billing and Pricing
+Q10: A manufacturing firm has recently migrated their application servers to the Amazon EC2 instance. The IT Manager is looking for the details of upcoming scheduled maintenance activities which AWS would be performing on AWS resources, that may impact the services on these EC2 instances.
+
+Which of the following services can alert you about the changes that can affect resources in your account? 
+
+A. AWS Organizations
+B. AWS Personal Health Dashboard
+C. AWS Trusted Advisor
+D. AWS Service Health Dashboard
+
+Answer – B
+
+Explanation : 
+
+AWS Personal Health Dashboard provides alerts for AWS services availability & performance which may impact resources deployed in your account. Customers get emails & mobile notifications for scheduled maintenance activities which might impact services on these AWS resources.   
+
+Option A is incorrect as AWS Organizations do not provide any notifications for scheduled maintenance activities.
+
+Option C is incorrect as AWS Trusted Advisor will provide notification on AWS resources created within the account for cost optimization, security, fault tolerance, performance, and service limits. It will not provide notification for scheduled maintenance activities performed by AWS on its resources.  
+
+Option D is incorrect as Service Health Dashboard displays the general status of all AWS services & will not display scheduled maintenance activities.
+
+For more information on the AWS Organizations, please refer to the below URL: https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/
+
+ 
+
+Domain : Security
+Q11: Which of the following AWS services can be used to retrieve configuration changes made to AWS resources causing operational issues?
+
+A. Amazon Inspector
+B. AWS CloudFormation
+C. AWS Trusted Advisor
+D. AWS Config
+
+Answer – D
+
+Explanation : 
+
+AWS Config can be used to audit, evaluate configurations of AWS resources. If there are any operational issues, AWS config can be used to retrieve configurational changes made to AWS resources that may have caused these issues.
+
+Option A is incorrect as Amazon Inspector can be used to analyze potential security threats for an Amazon EC2 instance against an assessment template with predefined rules. It does not provide historical data for configurational changes done to AWS resources.
+Option B is incorrect as AWS CloudFormation provided templates to provision and configure resources in AWS.
+Option C is incorrect as AWS Trusted Advisor can help optimize resources with AWS cloud with respect to cost, security, performance, fault tolerance, and service limits. It does not provide historical data for configurational changes done to AWS resources.
+For more information on AWS Config, refer to the following URL:https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html
+
+ 
+
+Domain : Security
+Q12: An organization runs several EC2 instances inside a VPC using three subnets, one for Development, one for Test, and one for Production. The Security team has some concerns about the VPC configuration. It requires restricting communication across the EC2 instances using Security Groups.
+
+Which of the following options is true for Security Groups related to the scenario?
+
+A. You can change a Security Group associated with an instance if the instance is in the running state.
+B. You can change a Security Group associated with an instance if the instance is in the hibernate state.
+C. You can change a Security Group only if there are no instances associated to it.
+D. The only Security Group you can change is the Default Security Group.
+
+Answer: A
+
+Explanation : 
+
+Option A is CORRECT because the AWS documentation mentions it in the section called “Changing an Instance’s Security Group” using the following sentence: “After you launch an instance into a VPC, you can change the security groups that are associated with the instance. You can change the security groups for an instance when the instance is in the running or stopped state.”
+Option B is incorrect as You can change the security groups for an instance when the instance is in the running or stopped state, not hibernate state.
+Option C is incorrect because there have to be some instances associated.
+Option D is incorrect because other security groups can also be changed.
+Reference: https://docs.aws.amazon.com/en_pv/vpc/latest/userguide/VPC_SecurityGroups.html
+
+ 
+
+Domain : Technology
+Q13: Which of the following features of Amazon RDS allows for better availability of databases? Choose the answer from the options given below.
+
+A. VPC Peering
+B. Multi-AZ
+C. Read Replicas
+D. Data encryption
+
+Answer – B
+
+Explanation : 
+
+The AWS Documentation mentions the following.
+
+If you are looking to use replication to increase database availability while protecting your latest database updates against unplanned outages, consider running your DB instance as a Multi-AZ deployment.
+
+For more information on AWS RDS, please visit the FAQ Link:https://aws.amazon.com/rds/faqs/
+
+ 
+
+Domain : Technology
+Q14: Your company wants to move an existing Oracle database to the AWS Cloud. Which of the following services can help facilitate this move?
+
+A. AWS Database Migration Service
+B. AWS VM Migration Service
+C. AWS Inspector
+D. AWS Trusted Advisor
+
+Answer – A
+
+Explanation : 
+
+The AWS Documentation mentions the following.
+
+AWS Database Migration Service helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. The AWS Database Migration Service can migrate your data to and from the most widely used commercial and open-source databases.
+
+For more information on AWS Database migration, please refer to the below URL:https://aws.amazon.com/dms/
+
+ 
+
+Domain : Security
+Q15: Which of the following services allows you to analyze EC2 Instances against pre-defined security templates to check for vulnerabilities?
+
+A. AWS Trusted Advisor
+B. AWS Inspector
+C. AWS WAF
+D. AWS Shield
+
+Answer – B
+
+Explanation : 
+
+The AWS Documentation mentions the following.
+
+Amazon Inspector enables you to analyze the behavior of your AWS resources and helps you to identify potential security issues. Using Amazon Inspector, you can define a collection of AWS resources that you want to include in an assessment target. You can then create an assessment template and launch a security assessment run of this target.
+
+For more information on AWS Inspector, please refer to the below URL:https://docs.aws.amazon.com/inspector/latest/userguide/inspector_introduction.html
+
+ 
+
+Domain : Technology
+Q16: A website for an international sport governing body would like to serve its content to viewers from different parts of the world in their vernacular language. Which of the following services provide location-based web personalization using geolocation headers?
+
+A. Amazon CloudFront
+B. Amazon EC2 Instance
+C. Amazon Lightsail
+D. Amazon Route 53
+
+Answer – A
+
+Explanation : 
+
+Amazon CloudFront supports country-level location-based web content personalization with a feature called Geolocation Headers.
+
+You can configure CloudFront to add additional geolocation headers that provide more granularity in your caching and origin request policies. The new headers give you more granular control of cache behavior and your origin access to the viewer’s country name, region, city, postal code, latitude, and longitude, all based on the viewer’s IP address.
+
+CloudFront Distribution
+Option B is INCORRECT because EC2 is just a distractor, not suitable for routing and delivery.
+Option C is INCORRECT because Amazon Lightsail will primarily allow for developing, deploying, and hosting websites and web applications. The service will not meet the requirements of the scenario.
+Option D is INCORRECT because the geolocation routing policy of Route53 allows different resources to serve content based on the origin of the request. Route 53 does not use geolocation headers.
+References:
+
+https://aws.amazon.com/about-aws/whats-new/2020/07/cloudfront-geolocation-headers/
+https://aws.amazon.com/blogs/networking-and-content-delivery/leverage-amazon-cloudfront-geolocation-headers-for-state-level-geo-targeting/
+
+ 
+
+Domain : Security
+Q17: Which of the following can be used to protect against DDoS attacks? Choose 2 answers from the options given below.
+
+A. AWS EC2
+B. AWS RDS
+C. AWS Shield
+D. AWS Shield Advanced
+
+Answer – C and D
+
+Explanation : 
+
+The AWS Documentation mentions the following:
+
+AWS Shield – All AWS customers benefit from the automatic protections of AWS Shield Standard, at no additional charge. AWS Shield Standard defends against most common, frequently occurring network and transport layer DDoS attacks that target your web site or applications
+
+AWS Shield Advanced – For higher levels of protection against attacks targeting your web applications running on Amazon EC2, (ELB), CloudFront, and Route 53 resources, you can subscribe to AWS Shield Advanced. AWS Shield Advanced provides expanded DDoS attack protection for these resources.
+
+For more information on AWS Shield, please refer to the below URL:https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html
+
+ 
+
+Domain : Technology
+Q18: Which of the following are the recommended resources to be deployed in the  Amazon VPC private subnet?
+
+A. NAT Gateways
+B. Bastion Hosts
+C. Database Servers
+D. Internet Gateways
+
+Answer – C
+
+Explanation : 
+
+As Database servers contain confidential information, so for a security perspective, it should be deployed in a Private Subnet.
+
+Amazon Virtual Private Cloud (Amazon VPC) enables the user to launch AWS resources into a virtual network that a user has defined.
+
+Option A is incorrect because NAT devices (NAT Gateway, Nat Instance) allow instances in private subnets to connect to the internet, other VPCs, or on-premises networks. It is deployed in a public subnet.
+
+Option B is incorrect because bastion host is a server whose purpose is to provide access (SSH access) to a private network from an external network, such as the Internet. It is deployed in a public subnet.
+
+Option D is incorrect because an Internet Gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet.
+
+For more information on AWS VPC, please refer to the below URL:https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat.html
+https://aws.amazon.com/blogs/security/how-to-record-ssh-sessions-established-through-a-bastion-host/
+
+ 
+
+Domain : Technology
+Q19: A company wants to utilize AWS storage. For them, low storage cost is paramount. The data is rarely retrieved and a data retrieval time of 13-14 hours is acceptable for them. What is the best storage option to use?
+
+A. Amazon S3 Glacier
+B. S3 Glacier Deep Archive
+C. Amazon EBS volumes
+D. AWS CloudFront
+
+Answer – B
+
+Explanation : 
+
+S3 Glacier Deep Archive offers the lowest cost storage in the cloud, at prices lower than storing and maintaining data in on-premises magnetic tape libraries or archiving data offsite.
+
+It expands our data archiving offerings, enabling you to select the optimal storage class based on storage and retrieval costs, and retrieval times.
+
+Option B is correct because S3 Glacier Deep Archive offers low-cost storage and retrieval time doesn’t matter for the company. If the question asks for fast retrieval time then S3 Glacier would be correct.
+
+Option A is incorrect because S3 Glacier is not cheaper than S3 Glacier Deep Archive.
+
+Options C and D are incorrect because they are not suitable for data archive and faster retrieval. Also, the CloudFront is not for storage.
+
+With S3 Glacier, customers can store their data cost-effectively for months, years, or even decades. S3 Glacier enables customers to offload the administrative burdens of operating and scaling storage to AWS, so they don’t have to worry about capacity planning, hardware provisioning, data replication, hardware failure detection, and recovery, or time-consuming hardware migrations.
+
+Amazon S3 Glacier for archiving data that might infrequently need to be restored within a few hours
+S3 Glacier Deep Archive for archiving long-term backup cycle data that might infrequently need to be restored within 12 hours
+Storage class	Expedited	Standard	Bulk
+Amazon S3 Glacier	1–5 minutes	3–5 hours	5–12 hours
+S3 Glacier Deep Archive	Not available	Within 12 hours	Within 48 hours
+Reference:
+
+https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html
+https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/amazon-s3-glacier.html
+https://aws.amazon.com/s3/storage-classes/
+
+ 
+
+Domain : Cloud Concepts
+Q20: Which AWS service provides a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability?
+
+A. AWS RDS
+B. DynamoDB
+C. Oracle RDS
+D. Elastic Map Reduce
+
+Answer: – B
+
+Explanation : 
+
+DynamoDB is a fully managed NoSQL offering provided by AWS. It is now available in most regions for users to consume.
+
+For more information on AWS DynamoDB, please refer to the below URL:http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html
+
+ 
+
+Domain : Cloud Concepts
+Q21: For which of the following AWS resources, the Customer is responsible for the infrastructure-related security configurations?
+
+A. Amazon RDS
+B. Amazon DynamoDB
+C. Amazon EC2
+D. AWS Fargate
+
+Answer: C
+
+Explanation : 
+
+Amazon EC2 is an Infrastructure as a Service (IaaS) for which customers are responsible for the security and the management of guest operating systems.
+
+Options A, B, and D are incorrect as all these resources are part of abstracted services for which AWS is responsible for the security, & infrastructure layer. Customers are responsible for data that is saved on these resources.
+For more information on the Shared responsibility model, refer to the following URL:https://aws.amazon.com/compliance/shared-responsibility-model/
+
+ 
+
+Domain : Cloud Concepts
+Q22: In the shared responsibility model for infrastructure services, such as Amazon Elastic Compute Cloud, which of the below two are customers responsibility?
+
+A. Network infrastructure
+B. Amazon Machine Images (AMIs)
+C. Virtualization infrastructure
+D. Physical security of hardware
+E. Policies and configuration
+
+Answer: B, E
+
+Explanation : 
+
+In the shared responsibility model, AWS is primarily responsible for “Security of the Cloud.” The customer is responsible for “Security in the Cloud.” In this scenario, the mentioned AWS product is IAAS (Amazon EC2) and AWS manages the security of the following assets:
+
+– Facilities
+
+– Physical security of hardware
+
+– Network infrastructure
+
+– Virtualization infrastructure
+
+Customers are responsible for the security of the following assets:
+
+– Amazon Machine Images (AMIs)
+
+– Operating systems
+
+– Applications
+
+– Data in transit
+
+– Data at rest
+
+– Data stores
+
+– Credentials
+
+– Policies and configuration
+
+Option A is incorrect. Refer to the explanation above and link in the references for more details.
+Option B is Correct. Refer to the explanation above and link in the references for more details.
+Option C is incorrect. Refer to the explanation above and link in the references for more details.
+Option D is incorrect. Refer to the explanation above and link in the references for more details.
+Option E is correct. Refer to the explanation above and link in the references for more details.
+References:
+
+https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html
+https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc
+
+ 
+
+Domain : Billing and Pricing
+Q23: AWS offers two savings plans to enable more savings and flexibility for its customers, namely, compute saving plans and EC2 Instance Savings plans.
+
+Which of the below statement is FALSE regarding Saving Plans?
+
+A. Capacity Reservations are not provided with Saving Plans.
+B. Savings Plans are available for all the regions.
+C. Savings plans will apply on ‘On-Demand Capacity Reservations’ that customers can allocate for their needs.
+D. The prices for Savings Plans do not change based on the amount of hourly commitment.
+
+Answer: B
+
+Explanation : 
+
+Option A is INCORRECT. The given statement is True.
+Option B is CORRECT. The given statement is False. For China Regions, savings plans are not available.
+Option C is INCORRECT. The given statement is True.
+Option D is INCORRECT. The given statement is True.
+Reference: https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html#sp-ris
+
+ 
+
+Domain : Technology
+Q24: Which of the below-listed services is a region-based AWS service?
+
+A. AWS IAM
+B. Amazon EFS
+C. Amazon Route 53
+D. Amazon CloudFront
+
+Answer: B
+
+Explanation : 
+
+Option A is INCORRECT. AWS IAM is a global service.
+Option B is CORRECT. EFS is a regional service.
+Option C is INCORRECT. Route 53 is a global service.
+Option D is INCORRECT. Amazon Cloudfront is a global service.
+References:
+
+https://aws.amazon.com/efs/
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
+
+ 
+
+Domain : Technology
+Q25: Which of the following LightSail Wizard allows the customers to “create a copy of the LightSail instance in EC2”?
+
+A. LightSail Backup
+B. LightSail Copy
+C. Upgrade to EC2
+D. LightSail-EC2 snapshot
+
+Answer: C
+
+Explanation : 
+
+Option A is INCORRECT. LightSail Backup is an invalid option.
+Option B is INCORRECT. LightSail Copy is an invalid option.
+Option C is CORRECT. “Upgrade to EC2” is the feature that allows customers to “create a copy of the LightSail instance in EC2”.
+To get started, you need to export your Lightsail instance manual snapshot. You’ll then use the Upgrade to EC2 wizard to create an instance in EC2.
+Customers who are comfortable with EC2 can then use the EC2 creation wizard or API to create a new EC2 instance as they would from an existing EC2 AMI.
+Option D is INCORRECT. A LightSail-EC2 snapshot is an invalid option.
+LightSail instance in EC2
+Reference:
+
+https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-exporting-snapshots-to-amazon-ec2
+https://aws.amazon.com/lightsail/features/upgrade-to-ec2/
+
+ 
+
+Domain : Technology
+Q26 : Which of the following features of Amazon Connect helps better customer engagement on AWS Cloud ?
+
+A. Push Notification
+B. High Quality Audio
+C. Mailbox Simulator
+D. Reputation Dashboard
+
+Correct Answer: B
+
+Amazon Connect is an omnichannel cloud contact centre which can be setup easily & with low cost. It has following features which helps to provide customers a superior service ,
+
+Telephone as a service
+High quality Audio
+Omnichannel routing
+Web & Mobile Chat
+Task management
+Contact Centre automation
+Rules Engine.
+Option A is incorrect as Push Notification is not a feature of Amazon Connect. It’s one of the features of Amazon Pinpoint.
+Option C is incorrect as Mailbox Simulator is not a feature of Amazon Connect. It’s one of the features of Amazon SES.
+Option D is incorrect as Reputation Dashboard is not a feature of Amazon Connect. It’s one of the features of Amazon SES.
+
+For more information on Amazon Connect, refer to the following URL: https://aws.amazon.com/connect/features/
+
+ 
+
+Domain : Technology
+Q27: A large IT company is looking to enable its large user base to remotely access Linux desktops from any location. Which service can be used for this purpose ?
+
+A. Amazon Cognito
+B. Amazon AppStream 2.0
+C. Amazon WorkSpaces
+D. Amazon WorkLink
+
+Correct Answer: C
+
+Amazon WorkSpaces provides a secure managed service for virtual desktops for remote users. It supports both Windows & Linux based virtual desktops for a large number of users.
+
+Option A is incorrect as Amazon Cognito can be used to control access to AWS resources from an application.
+Option B is incorrect as Amazon AppStream 2.0 can be used to provide access to applications or a non-persistent desktop from any location.
+Option D is incorrect as Amazon WorkLink can be used by internal employees to securely access internal websites & applications using mobile phones.
+
+For more information on Amazon WorkSpaces, refer to the following URL: https://aws.amazon.com/workspaces/features/
+
+ 
+
+Domain : Cloud Concepts
+Q28 : Users in the Developer Team need to deploy a multi-tier web application. Which service can be used to create a customized portfolio that will help users for quick deployment?
+
+A. AWS Config
+B. AWS Code Deploy
+C. AWS Service Catalog
+D. AWS Cloud Formation
+
+Correct Answer: C
+
+AWS Service Catalog can be used to create & deploy portfolio of products within AWS infrastructure. This helps to create consistent resources within AWS infrastructure with quick deployment. These catalogues can be used for deployment of single resource or a multi-tier web application consisting of web, application, & database layer resources.
+
+Option A is incorrect as AWS config is used for evaluating configuration on the resources deployed in AWS cloud. It will not help for creating portfolios of resources for quick deployment.
+Option B is incorrect as AWS CodeDeploy is a managed service for automating software deployment on AWS resources & on-premise systems. It is not suitable for creating portfolios of resources for quick deployment.
+Option D is incorrect as AWS CloudFormation is a service for provisioning AWS resources using templates.
+
+For more information on AWS Service Catalog, refer to the following URL: https://aws.amazon.com/servicecatalog/features/
+
+ 
+
+Domain : Billing and Pricing
+Q29 : A large Oil & gas company is planning to deploy a high-volume application on multiple Amazon EC2 instances.  Which of the following can help to reduce operational expenses?
+
+A. Deploy Amazon EC2 instance with Auto-scaling
+B. Deploy Amazon EC2 instance in multiple AZ’s
+C. Deploy Amazon EC2 instance with Amazon instance store-backed AMI
+D. Deploy Amazon EC2 instance with Cluster placement group
+
+Correct Answer: A
+
+Using Amazon EC2 Auto-Scaling helps to match the workload on the application with the optimum number of the Amazon EC2 instance. Due to this, during low load on application, Amazon EC2 instances are terminated which reduces operational cost.
+
+Option B is incorrect as deploying an Amazon EC2 instance in a multiple AZ might enhance application availability but will not reduce operational expenses.
+Option C is incorrect as deploying an Amazon EC2 instance with Amazon instance store-backed AMI incur charges for Amazon EC2 instance usage & storing AMI in Amazon S3. There will be no impact on operational expense using this AMI type.
+Option D is incorrect as deploying an Amazon EC2 instance in a cluster placement group will help to have low latency between instances but will not reduce operational expenses.
+
+For more information on reducing cost using AWS cloud , refer to the following URL: https://aws.amazon.com/economics/
+
+ 
+
+Domain : Cloud Concepts
+Q30 : Which of the following activities are within the scope of AWS Support?
+
+A. Troubleshooting API issues
+B. Code Development
+C. Debugging custom software
+D. Third-party application configuration on AWS resources
+E. Database query tuning
+
+Correct Answers: A and D
+
+As a part of AWS Support following activities are performed,
+
+Queries regarding all AWS Services & features.
+Best Practices to integrate, deploy & manage applications in the AWS cloud.
+Troubleshooting API & SDK issues.
+Troubleshooting operational issues.
+Issues related to any AWS Tools.
+Problems detected by EC2 health checks
+Third-Party application configuration on AWS resources & products.
+AWS Support does not include:
+
+Code development
+Debugging custom software
+Performing system administration tasks
+Database query tuning
+Cross-Account Support
+Option B is incorrect as Code Development is not in the scope of AWS Support. This needs to be taken care of by the customer.
+Option C is incorrect as Debugging custom software is not in the scope of AWS Support. This needs to be taken care of by the customer.
+Option E is incorrect as Database query tuning is not in the scope of AWS Support. This needs to be taken care of by the customer.
+
+
+Which statement best describes an IAM policy?  A document that grants or denies permissions to AWS services and resources
+An employee requires temporary access to create several Amazon S3 buckets. Which option would be the best choice for this task? IAM role
+Which statement best describes the principle of least privilege? Granting only the permissions that are needed to perform specific tasks
+Which service helps protect your applications against distributed denial-of-service (DDoS) attacks? AWS Shield
+Which task can AWS Key Management Service (AWS KMS) perform? Create cryptographic keys.
+
+Which tasks can you perform using AWS CloudTrail? (Select TWO.)  Track user activities and API requests throughout your AWS infrastructure Filter logs to assist with operational analysis and troubleshooting
+Which actions can you perform using Amazon CloudWatch? (Select TWO.) Monitor your resources’ utilization and performance Access metrics from a single dashboard
+Which service enables you to review the security of your Amazon S3 buckets by checking for open access permissions? AWS Trusted Advisor
+Which categories are included in the AWS Trusted Advisor dashboard? (Select TWO.) Performance  Fault tolerance
+The AWS Free Tier includes offers that are available to new AWS customers for a certain period of time following their AWS sign-up date. What is the duration of this period? 12 months
+Which Support plan includes all AWS Trusted Advisor checks at the lowest cost? Business
+Which action can you perform with consolidated billing? Combine usage across accounts to receive volume pricing discounts.
+Which pricing tool is used to visualize, understand, and manage your AWS costs and usage over time? AWS Cost Explorer
+Which pricing tool enables you to receive alerts when your service usage exceeds a threshold that you have defined? AWS Budgets
+Your company wants to receive support from an AWS Technical Account Manager (TAM). Which support plan should you choose? Enterprise
+Which service or resource is used to find third-party software that runs on AWS? AWS Marketplace
+Which Perspective of the AWS Cloud Adoption Framework helps you design, implement, and optimize your AWS infrastructure based on your business goals and perspectives? Platform Perspective
+Which migration strategy involves moving to a different product? Repurchasing
+What is the storage capacity of Snowball Edge Storage Optimized? 80 TB
+Which service enables you to quickly build, train, and deploy machine learning models? Amazon SageMaker
+Which Perspective of the AWS Cloud Adoption Framework helps you structure the selection and implementation of permissions? The security perspective
+Which strategies are included in the six strategies for application migration? (Select TWO.)
+Which strategies are included in the six strategies for application migration? (Select TWO.) Retaining Rehosting
+What is the storage capacity of AWS Snowmobile? 100PB
+Which statement best describes Amazon Lex? A service that enables you to build conversational interfaces using voice and text
+Which pillar of the AWS Well-Architected Framework focuses on the ability of a workload to consistently and correctly perform its intended functions?  Reliability The Reliability pillar
+Operating in the AWS Cloud offers many benefits over computing in on-premises or hybrid environments. Trade upfront expense for variable expense. Benefit from massive economies of scale. Stop guessing capacity. Increase speed and agility. Stop spending money running and maintaining data centers. Go global in minutes.
+Which process is an example of benefiting from massive economies of scale? Receiving lower pay-as-you-go prices as the result of AWS customers’ aggregated usage of services
+Which pillar of the AWS Well-Architected Framework includes the ability to run workloads effectively and gain insights into their operations? Operational Excellence
+What are the benefits of cloud computing? (Select TWO.) Increase speed and agility. Stop spending money running and maintaining data centers.
+
+Which statement best describes Elastic Load Balancing? A service that distributes incoming traffic across multiple targets, such as Amazon EC2 instances
+Which service enables you to review details for user activities and API calls that have occurred within your AWS environment?  AWS CloudTrail
+Which tool enables you to visualize, understand, and manage your AWS costs and usage over time? AWS Cost Explorer
+Which statement best describes Amazon GuardDuty? A service that provides intelligent threat detection for your AWS infrastructure and resources
+Which action can you perform in Amazon CloudFront? Deliver content to customers through a global network of edge locations.
+Which actions can you perform in Amazon Route 53? (Select TWO.) Connect user requests to infrastructure in AWS and outside of AWS Manage DNS records for domain names.
+Which statement best describes AWS Marketplace? A digital catalog that includes thousands of software listings from independent software vendors
+Which service enables you to build the workflows that are required for human review of machine learning predictions? Amazon Augmented AI
+Which statement is TRUE for AWS Lambda? You pay only for compute time while your code is running.
+Which Perspective of the AWS Cloud Adoption Framework focuses on recovering IT workloads to meet the requirements of your business stakeholders? Operations Perspective
+Which pillar of the AWS Well-Architected Framework focuses on using computing resources in ways that meet system requirements? Performance Efficiency
+Which service is used to transfer up to 100 PB of data to AWS? AWS Snowmobile
+You are running an Amazon EC2 instance and want to store data in an attached resource. Your data is temporary and will not be kept long term. Which resource should you use? Instance store
+Which compute option reduces costs when you commit to a consistent amount of compute usage for a 1-year or 3-year term? Savings Plans
+You want to store data in a key-value database. Which service should you use? Amazon DynamoDB
+Which service is used to quickly deploy and scale applications on AWS? AWS Elastic Beanstalk
+You want Amazon S3 to monitor your objects’ access patterns. Which storage class should you use? Amazon S3 Intelligent-Tiering
+Which statement best describes an Availability Zone? A fully isolated portion of the AWS global infrastructure
+Which service enables you to consolidate and manage multiple AWS accounts from a central location? AWS Organizations
+Which migration strategy involves changing how an application is architected and developed, typically by using cloud-native features? Refactoring
+You want to send and receive messages between distributed application components. Which service should you use?    Amazon Simple Queue Service (Amazon SQS)
+In the S3 Intelligent-Tiering storage class, Amazon S3 moves objects between a frequent access tier and an infrequent access tier. Which storage classes are used for these tiers? (Select TWO.) Amazon S3 Standard Amazon S3 Standard-IA
+Which AWS Trusted Advisor category includes checks for high-utilization EC2 instances? Performance
+Which service is used to run containerized applications on AWS? Amazon Elastic Kubernetes Service (Amazon EKS)
+Which component or service enables you to establish a dedicated private connection between your data center and virtual private cloud (VPC)? AWS Direct Connect
+Which tool is used to automate actions for AWS services and applications through scripts? AWS Command Line Interface
+Which Support plans include access to all AWS Trusted Advisor checks? (Select TWO.) Business Enterprise
+Which virtual private cloud (VPC) component controls inbound and outbound traffic for Amazon EC2 instances? Security group
+Which tasks are the responsibilities of AWS? (Select TWO.) Maintaining virtualization infrastructure Configuring AWS infrastructure devices
+You want to store data in a volume that is attached to an Amazon EC2 instance. Which service should you use? Amazon Elastic Block Store (Amazon EBS)
+
+
+
+
+
+
+
