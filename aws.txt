@@ -47,6 +47,43 @@ A company wants a dedicated private connection to the AWS Cloud from its on-prem
 Which AWS service or feature will provide this connection? D
 AWS Direct Connect
 
+Which aspect of AWS infrastructure provides global deployment of compute and storage? B
+Multiple AWS Regions
+
+Which AWS services or features support data replication across AWS Regions? (Select TWO.)
+A
+Amazon S3
+E
+Amazon RDS
+
+A company is hosting a static website from a single Amazon S3 bucket. 
+
+Which AWS service will achieve lower latency and high transfer speeds?
+D
+Amazon CloudFront
+
+Which AWS service provides a simple and scalable shared file storage solution for use with Linux-based Amazon EC2 instances and on-premises servers?
+D
+Amazon Elastic File System (Amazon EFS)
+
+A company needs phone, email, and chat access 24 hours a day, 7 days a week. The response time must be less than 1 hour if a production system has a service interruption.
+
+Which AWS Support plan meets these requirements at the LOWEST cost?
+C
+AWS Business Support
+
+Which Amazon EC2 pricing model adjusts based on supply and demand of EC2 instances?
+C
+Spot Instances
+
+Which of the following is an advantage of consolidated billing on AWS?
+A
+Volume pricing qualification
+
+Which AWS service can create an alarm that sends a notification when a billing threshold is exceeded?
+C
+Amazon CloudWatch
+
 
 
 
