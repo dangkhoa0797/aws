@@ -1,0 +1,52 @@
+Which of the following are benefits of the AWS Cloud? (Select TWO.)
+Capital expenses are replaced with variable expenses. Companies gain increased agility.
+
+Which of the following are advantages of the AWS Cloud? (Select TWO.)
+AWS manages the maintenance of the cloud infrastructure. AWS manages capacity planning for physical servers.
+
+A company requires physical isolation of its Amazon EC2 instances from the instances of other customers.Which instance purchasing option meets this requirement?
+Dedicated Hosts
+
+Which AWS Cloud architecture principle states that systems should reduce interdependencies?
+Loose coupling
+
+Which AWS Cloud architecture design principle supports the distribution of workloads across multiple Availability Zones?
+Design for failure.
+
+Which of the following is a responsibility of AWS under the AWS shared responsibility model? Select answer
+Secure the physical infrastructure.
+
+Which of the following describes a security best practice that can be implemented by using AWS Identity and Access Management (IAM)?
+C
+Grant permissions to users who are required to perform a specific task only.
+
+A company needs to monitor and receive alerts about AWS Management Console sign-in events that involve the AWS account root user.
+
+Which AWS service can the company use to meet these requirements?
+A
+Amazon CloudWatch
+
+A company has an application server that runs on an Amazon EC2 instance. The application server needs to access contents within a private Amazon S3 bucket.
+
+What is the recommended approach to meet this requirement?
+Create an IAM role with the appropriate permissions. Associate the role with the EC2 instance.
+
+Which security-related services or features does AWS offer?
+B
+AWS Trusted Advisor security checks
+C
+Data encryption
+
+Which recommendations are included in the AWS Trusted Advisor checks? (Select TWO.)
+A
+Amazon S3 bucket permissions
+C
+Multi-factor authentication (MFA) use on the AWS account root user
+A company wants a dedicated private connection to the AWS Cloud from its on-premises operations.
+
+Which AWS service or feature will provide this connection? D
+AWS Direct Connect
+
+
+
+
